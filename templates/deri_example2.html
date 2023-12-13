@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <title>Product and Trigonometric Derivative</title>
+<!-- <link rel="stylesheet" href="C:\Users\Adia_\Desktop\Exercises_Examples\Exercises_Examples\css\styles.css">-->
+</head>
+<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
+  <img src="../static/Logo.png" width="50%" />
+  </div>  
+      <div style= "max-width: 85%; 
+      text-align: justify;">
+      <div style="margin-left:15%;">
+      <ul>
+      <h3 style="text-align: center;">Product and Trigonometric Rules</h3>
+      <div class="example-boxAlgebra">
+      <h4>Example 1:  \(y = sin(x)\cdot cos(x)\)<h4>
+  <h4 class="heading_margen">Solution: </h4>
+  <p class= "math-equation">
+   \(\;\;\;\;\;\dfrac{dy}{dx} = \dfrac{d}{dx}(sin(x)cos(x))\)</p>
+  <p>\(⇒  \dfrac{dy}{dx} = cos(x)\cdot\dfrac{d}{dx}(sin(x)) + sin(x)\cdot\dfrac{d}{dx}(cos(x))\)</p>
+  <p>\(⇒  \dfrac{dy}{dx} = cos(x)\cdot cos(x) + sin(x)\cdot (-cos(x))\)</p>
+  <p>\(⇒  \dfrac{dy}{dx} = cos^2(x) - sin^2(x)\)</p>
+  </p>
+      </div>
+            <br>
+    <div class="example-boxAlgebra">
+      <h4>Example 2: \(y = x^2sin^{-1}(x)\)</h4>
+  <h4 class="heading_margen">Solution: </h4>
+  <p class= "math-equation">  
+  \(\;\;\;\;\;\dfrac{dy}{dx} = sin^{-1}(x)\cdot \dfrac{d}{dx}(x^2) + x^2\cdot \dfrac{d}{dx}(sin^{-1}(x))\)
+  <p>\(⇒  \dfrac{dy}{dx} = sin^{-1}(x)\cdot 2x+ x^2\cdot \dfrac{1}{\sqrt{1 - x^2}}\)</p>
+  <p>\(⇒  \dfrac{dy}{dx} = 2x\cdot sin^{-1}(x)+ \dfrac{x^2}{\sqrt{1 - x^2}}\)</p>
+  </p>
+    </div>
+    <br>
+    <div class="example-boxAlgebra">
+      <h4>Example 3: \(y = tan(x)\cdot sec(x) + sin^2(x)\)</h4>
+  <h4 class="heading_margen">Solution: </h4>
+  <p class= "math-equation">
+  \(\;\;\;\;\;\dfrac{dy}{dx} = (sec(x))\cdot \dfrac{d}{dx}tan(x) + tan(x)\cdot \dfrac{d}{dx}(sec(x))\)
+  <br> \(\;\;\;\;\;\;\;\;\;\;\;\; + \dfrac{d}{dx}(sin^2(x))\)
+  <br>\(⇒  \dfrac{dy}{dx} = sec(x)\cdot sec^2(x) + tan(x)\cdot (sec(x))(tan(x))\) 
+  <br> \(\;\;\;\;\;\;\;\;\;\;\;\; + 2sin(x)\cdot cos(x)\)
+  <br>\(⇒  \dfrac{dy}{dx} = sec^3(x) + tan^2(x)\cdot sec(x) + 2sin(x)\cdot cos(x)\)</p>
+  <p>\(⇒  \dfrac{dy}{dx} = sec(x)(sec^2(x) + tan^2(x)) + 2sin(x)\cdot cos(x)\)</p>
+  </p>
+
+     </div>  
+      </ul>
+        </div>
+        <div style = "text-align: right; font-size: 20px; padding-right: 10%;">      
+          <a href="deri_exercise2.html">Exercise</a>
+          </div>
+   </div>
+  <script src="../static/script.js"></script>
+</body>
+</html>
