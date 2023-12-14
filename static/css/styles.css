@@ -96,10 +96,7 @@ height: "10";
   }
     /* End Example Style*/
 .line-spcaing {
-    font-family: MathJax Fonts;
     font-size:large;
-    margin-top: -0.5%; 
-    margin-bottom: -0.5% ;
     line-height: 1.7
 }
   .body {
