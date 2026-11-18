@@ -95,10 +95,7 @@ height: "10";
     line-height: 1.7;
   }
     /* End Example Style*/
-.line-spcaing {
-    font-size:large;
-    line-height: 1.7
-}
+
   .body {
     display: flex;
     justify-content: flex-end; 
