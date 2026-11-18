@@ -2,108 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derivatives</title>
+  
+  <!-- Load CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <!-- MathJax Configuration -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    .math-equation {
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .exercise-link {
+      text-align: right;
+      font-size: 18px;
+      padding-right: 10%;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-  <img src="../static/Logo.png" width="50%" />
+<body>
+
+  <!-- Logo Header -->
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="../static/Logo.png" width="50%" alt="Logo" />
   </div>
   
-      <div style= "max-width: 85%; 
-      text-align: justify;">
-      <div style="margin-left:15%;">
-         <h3>Mathematics</h3>
-         <ul>
-          <h3>Derivatives</h3>
-          <p class="math-equation">
-              The derivative is the instantaneous rate of change at which output of a function changes as its input value changes. 
-              The rate of change of a function \(f(x)\), often denoted as \(\dfrac{d}{dx}\left(f(x)\right)\), \(\dfrac{df}{dx}\), \({D}{f}\left(x\right)\), or \({f'}\left(x\right) = 0\). 
-              Derivative is used to optimize a function also it find the intervals where the function is increasing or decreasing. 
-              <br>Given below are the basic rules of derivatives:
-          </p>
-              <h4>Constant Rule</h4>
-          <p class="math-equation">
-              According to the derivatives constant rule, the derivatives of a constant is always be 0. If \(y = c\), where \(c\) is a constant, then \(\dfrac{dy}{dx} = \dfrac{dc}{dx} = 0\).
-              <br> Example: \(y = 20\)
-              <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(20\right) = 0\).
-          </p>
-              <h4>Constant Multiplication Rule</h4>
-          <p class="math-equation">
-              It states that if you have a function that is a constant multiplied by another function, the derivative of this expression is the constant multiplied by the derivative of the other function. If \(y = cx\), where \(c\) is a constant, then \(\dfrac{dy}{dx}\left(cx\right) = c \cdot \dfrac{d}{dx}\left(x\right)\).
-              <br>Example:  \(y = 7x\)
-              <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(7x\right)\)
-              <p>\(\dfrac{dy}{dx} = 7 \cdot \dfrac{d}{dx}\left(x\right)\) &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp (i.e &nbsp&nbsp \(\dfrac{d}{dx}\left(x\right) = 1\))</p>
-              <p>\(\dfrac{dy}{dx} = 7\) </p>
-          </p>
+  <!-- Main Content -->
+  <div class="content-container">
     
-             <h4>Power Rule</h4>
-<p class="math-equation">
-  According to the power rule, if we have \(y = x^n\), then \(\dfrac{dy}{dx} = n \cdot x^{n-1}\).
-  <br>Example: \(y = x^3\)
-  <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(x^3\right)\)
-  <br>\(\dfrac{dy}{dx} = 3 \cdot x^{3-1}\)
-  <br>\(\dfrac{dy}{dx} = 3x^2\)
-  <br>Example: \(y = x^5\)
-  <br>\(\dfrac{dy}{dx} = 5x^{5-1} = 5x^4\)
-</p>
+    <h3>Mathematics</h3>
+    
 
-<h4>Sum/Difference Rule</h4>
-<p class="math-equation">
-  According to the sum and difference rule, the derivative distributes over addition and subtraction as:
-  \(\dfrac{d}{dx}[a \pm b] = \dfrac{da}{dx} \pm \dfrac{db}{dx}\).
-  <br>Example: \(y = 2x \pm 7\)
-  <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(2x \pm 7\right)\)
-  <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(2x\right) \pm \dfrac{d}{dx}\left(7\right)\)
-  <br>\(\dfrac{dy}{dx} = 2 \pm 0\)
-  <br>\(\dfrac{dy}{dx} = 2\)
-</p>
+    <div>
+      <h3>Derivatives</h3>
+      <p class="math-equation">
+        The derivative is the instantaneous rate of change at which output of a function changes as its input value changes. 
+        The rate of change of a function \(f(x)\), often denoted as \(\dfrac{d}{dx}\left(f(x)\right)\), \(\dfrac{df}{dx}\), \({D}{f}\left(x\right)\), or \({f'}\left(x\right) = 0\). 
+        Derivative is used to optimize a function also it find the intervals where the function is increasing or decreasing. 
+        <br>Given below are the basic rules of derivatives:
+      </p>
 
-<h4>Product Rule</h4>
-<p class="math-equation">
-  The rule for finding the derivative of a product of two functions states that:
-  “the derivative of the first function multiplied by the second function, plus the first function multiplied by the derivative of the second function.”
-  Such as \(\dfrac{d}{dx}\left(a \cdot b\right) = a \cdot \dfrac{db}{dx} + b \cdot \dfrac{da}{dx}\)
-  &nbsp;&nbsp;("\(\cdot\)" is alternatively used for multiplication).
-  <br>Example: \(y = 3x^3 \times 5x\)
-  <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(3x^3 \times 5x\right)\)
-  <br>\(\dfrac{dy}{dx} = 3x^3 \cdot \dfrac{d}{dx}(5x) + 5x \cdot \dfrac{d}{dx}(3x^3)\)
-  <br>\(\dfrac{dy}{dx} = 3x^3 \cdot 5 + 5x \cdot 9x^2\)
-  <br>\(\dfrac{dy}{dx} = 15x^3 + 45x^3\)
-  <br>\(\dfrac{dy}{dx} = 60x^3\)
-</p>
+      <h4>Constant Rule</h4>
+      <p class="math-equation">
+        According to the derivatives constant rule, the derivatives of a constant is always be 0. If \(y = c\), where \(c\) is a constant, then \(\dfrac{dy}{dx} = \dfrac{dc}{dx} = 0\).
+        <br> Example: \(y = 20\)
+        <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(20\right) = 0\).
+      </p>
 
-<h4>Trigonometric Functions</h4>
-<p class="math-equation">
-  These derivative formulas are essential for finding the rates of change of trigonometric functions and their inverses in calculus and physics problems.
-  <br>\(\dfrac{d}{dx}\left(\sin(x)\right) = \cos(x)\)
-  <br>\(\dfrac{d}{dx}\left(\cos(x)\right) = -\sin(x)\)
-  <br>\(\dfrac{d}{dx}\left(\tan(x)\right) = \sec^2(x)\)
-  <br>\(\dfrac{d}{dx}\left(\sin^{-1}(x)\right) = \dfrac{1}{\sqrt{1 - x^2}}\)
-  <br>\(\dfrac{d}{dx}\left(\cos^{-1}(x)\right) = -\dfrac{1}{\sqrt{1 - x^2}}\)
-  <br>\(\dfrac{d}{dx}\left(\tan^{-1}(x)\right) = \dfrac{1}{1 + x^2}\)
-</p>
+      <h4>Constant Multiplication Rule</h4>
+      <p class="math-equation">
+        It states that if you have a function that is a constant multiplied by another function, the derivative of this expression is the constant multiplied by the derivative of the other function. If \(y = cx\), where \(c\) is a constant, then \(\dfrac{dy}{dx}\left(cx\right) = c \cdot \dfrac{d}{dx}\left(x\right)\).
+        <br>Example:  \(y = 7x\)
+        <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(7x\right)\)
+        <br>\(\dfrac{dy}{dx} = 7 \cdot \dfrac{d}{dx}\left(x\right)\) &nbsp;&nbsp;&nbsp; (i.e., \(\dfrac{d}{dx}\left(x\right) = 1\))
+        <br>\(\dfrac{dy}{dx} = 7\) 
+      </p>
+
+      <h4>Power Rule</h4>
+      <p class="math-equation">
+        According to the power rule, if we have \(y = x^n\), then \(\dfrac{dy}{dx} = n \cdot x^{n-1}\).
+        <br>Example: \(y = x^3\)
+        <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(x^3\right)\)
+        <br>\(\dfrac{dy}{dx} = 3 \cdot x^{3-1}\)
+        <br>\(\dfrac{dy}{dx} = 3x^2\)
+        <br>Example: \(y = x^5\)
+        <br>\(\dfrac{dy}{dx} = 5x^{5-1} = 5x^4\)
+      </p>
+
+      <h4>Sum/Difference Rule</h4>
+      <p class="math-equation">
+        According to the sum and difference rule, the derivative distributes over addition and subtraction as:
+        \(\dfrac{d}{dx}[a \pm b] = \dfrac{da}{dx} \pm \dfrac{db}{dx}\).
+        <br>Example: \(y = 2x \pm 7\)
+        <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(2x \pm 7\right)\)
+        <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(2x\right) \pm \dfrac{d}{dx}\left(7\right)\)
+        <br>\(\dfrac{dy}{dx} = 2 \pm 0\)
+        <br>\(\dfrac{dy}{dx} = 2\)
+      </p>
+
+      <h4>Product Rule</h4>
+      <p class="math-equation">
+        The rule for finding the derivative of a product of two functions states that:
+        “the derivative of the first function multiplied by the second function, plus the first function multiplied by the derivative of the second function.”
+        Such as \(\dfrac{d}{dx}\left(a \cdot b\right) = a \cdot \dfrac{db}{dx} + b \cdot \dfrac{da}{dx}\)
+        &nbsp;&nbsp;("\(\cdot\)" is alternatively used for multiplication).
+        <br>Example: \(y = 3x^3 \times 5x\)
+        <br>\(\dfrac{dy}{dx} = \dfrac{d}{dx}\left(3x^3 \times 5x\right)\)
+        <br>\(\dfrac{dy}{dx} = 3x^3 \cdot \dfrac{d}{dx}(5x) + 5x \cdot \dfrac{d}{dx}(3x^3)\)
+        <br>\(\dfrac{dy}{dx} = 3x^3 \cdot 5 + 5x \cdot 9x^2\)
+        <br>\(\dfrac{dy}{dx} = 15x^3 + 45x^3\)
+        <br>\(\dfrac{dy}{dx} = 60x^3\)
+      </p>
+
+      <h4>Trigonometric Functions</h4>
+      <p class="math-equation">
+        These derivative formulas are essential for finding the rates of change of trigonometric functions and their inverses in calculus and physics problems.
+        <br>\(\dfrac{d}{dx}\left(\sin(x)\right) = \cos(x)\)
+        <br>\(\dfrac{d}{dx}\left(\cos(x)\right) = -\sin(x)\)
+        <br>\(\dfrac{d}{dx}\left(\tan(x)\right) = \sec^2(x)\)
+        <br>\(\dfrac{d}{dx}\left(\sin^{-1}(x)\right) = \dfrac{1}{\sqrt{1 - x^2}}\)
+        <br>\(\dfrac{d}{dx}\left(\cos^{-1}(x)\right) = -\dfrac{1}{\sqrt{1 - x^2}}\)
+        <br>\(\dfrac{d}{dx}\left(\tan^{-1}(x)\right) = \dfrac{1}{1 + x^2}\)
+      </p>
         
-             
-          <div style = "text-align: right; font-size: 18px; padding-right: 10%;">      
-            <a href="deri_exercise1.html">Exercise</a>
-            </div>
-            <h5>Reference</h5>
-            <ul>
-            <li style="margin-top: -2%;"><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
-           <li style="margin-top: 1.5%;"><a href="https://www.math-only-math.com/">Math-Only-Math</a></li>
-           <!--<li style="margin-top: -2%;"><a href="https://www.geeksforgeeks.org/solving-cubic-equations/"> GeeksforGeeks</a></li>
-           -->
-        </ul>
-        </div>
+      <div class="exercise-link">      
+        <a href="deri_exercise1.html">Exercise</a>
+      </div>
+      
+      <h5>Reference</h5>
+      <ul>
+        <li style="margin-top: -2%;"><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
+        <li style="margin-top: 1.5%;"><a href="https://www.math-only-math.com/">Math-Only-Math</a></li>
       </ul>
+    </div>
   </div>
-</div>
-<script src="../static/script.js"></script>
+
+  <script src="../static/script.js"></script>
 </body>
 </html>

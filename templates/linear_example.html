@@ -1,71 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear Algebra Example</title>
+  
+  <!-- Load CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+  <!-- MathJax Configuration  -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
   </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-   <title>Linear Algebra Example</title>
-<!-- <link rel="stylesheet" href="C:\Users\Adia_\Desktop\Exercises_Examples\Exercises_Examples\css\styles.css">-->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    .math-equation {
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-  <img src="../static/Logo.png" width="50%" />
+<body>
+
+  <!-- Logo Header -->
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="../static/Logo.png" width="50%" alt="Logo" />
   </div>
   
-      <div class="content">
-      <div style="margin-left:15%;">
-      <ul>
-      <h2 class="headingtop_margin">Algebra: Linear Equation Examples</h2>
-      <div class="example-boxAlgebra">
-      <h4>Example 1: \(95x - 12 \; \;= 23x + 9\) <h4>
-        <h4 class="heading_margin">Solution: </h4>
-        <p class= "math-equation">
-          Move terms with \(x\) to one side and constant on the other side
-          <br>\(95x - 23x = 9 + 12\)           
-          <br>\(72x \; \;\; \;= 21\) 
-          <br> Divide both sides by 72
-          <br>\(x    = 21 / 72 \)   
-          <br> Simplify fraction      
-          <br>\(x    = 7/24\)            
-         </p>
+  <!-- Main Content -->
+  <div class="content-container">
+    
+    <h2 class="headingtop_margin">Algebra: Linear Equation Examples</h2>
+    
+    <!-- Example 1 -->
+    <div class="example-boxAlgebra">
+      <!-- Fixed unclosed h4 tag -->
+      <h4>Example 1: \(95x - 12 = 23x + 9\)</h4>
+      <h4 class="heading_margin">Solution: </h4>
+      
+      <div class="math-equation">
+        $$
+        \begin{aligned}
+        \text{Move terms with } x \text{ to one side and constants on the other side:} \\
+        95x - 23x &= 9 + 12 \\
+        72x &= 21 \\
+        \text{Divide both sides by 72:} \\
+        x &= \frac{21}{72} \\
+        \text{Simplify fraction:} \\
+        x &= \frac{7}{24}
+        \end{aligned}
+        $$
       </div>
-            <br>
+    </div>
+    
+    <br>
+
+    <!-- Example 2 -->
     <div class="example-boxAlgebra">
       <h4>Example 2: \(9x + 8 + 16x = 22\) </h4>
-        <h4 class="heading_margin">Solution: </h4>
-        <p class= "math-equation">
-          Move terms with \(x\) to one side and constant on the other side
-          <br>\(9x + 16x \; \; \; \;\;\;\,= 22 - 8\)          
-          <br>\(25x \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;= 15\)
-          <br> Divide both sides by 25
-          <br>\(x = 15 / 25\)  
-          <br> Simplify fraction    
-          <br>\(x = 3/5\)     
-         </p>
+      <h4 class="heading_margin">Solution: </h4>
+      
+      <div class="math-equation">
+        $$
+        \begin{aligned}
+        \text{Move terms with } x \text{ to one side and constants on the other side:} \\
+        9x + 16x &= 22 - 8 \\          
+        25x &= 15 \\
+        \text{Divide both sides by 25:} \\
+        x &= \frac{15}{25} \\
+        \text{Simplify fraction:} \\
+        x &= \frac{3}{5}
+        \end{aligned}
+        $$
+      </div>
     </div>
+    
     <br>
-    <div class="example-boxAlgebra">
-      <h4>Example 3: \(11x + 1 \; \; \;\; = 10x - 9 \) </h4>
-        <h4 class="heading_margin">Solution: </h4>
-        <p class="math-equation">
-          Move terms with \(x\) to one side and constant on the other side
-          <br>\(11x - 10x = -9 - 1 \)          
-          <br>\(x \;\;\;\;\;\;\;\;\;\;\;\;\;\;= -10 \)
-         </p>
 
-     </div>      
-      </ul>
-        </div>
-        
-        <div style = "text-align: right; font-size: 20px; padding-right: 10%;">      
-          <a href="linear_exercise.html">Exercise</a>
-          </div>
-   </div>
+    <!-- Example 3 -->
+    <div class="example-boxAlgebra">
+      <h4>Example 3: \(11x + 1 = 10x - 9\) </h4>
+      <h4 class="heading_margin">Solution: </h4>
+      
+      <div class="math-equation">
+        $$
+        \begin{aligned}
+        \text{Move terms with } x \text{ to one side and constants on the other side:} \\
+        11x - 10x &= -9 - 1 \\          
+        x &= -10
+        \end{aligned}
+        $$
+      </div>
+    </div>      
+
+    <!-- Exercise Link -->
+    <div style="text-align: right; font-size: 20px; padding-right: 10%; margin-top: 20px;">      
+      <a href="linear_exercise.html">Exercise</a>
+    </div>
+
+  </div>
+
   <script src="../static/script.js"></script>
 </body>
 </html>

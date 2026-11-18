@@ -2,76 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quadratic Algebra</title>
-<!-- <link rel="stylesheet" href="C:\Users\Adia_\Desktop\Exercises_Examples\Exercises_Examples\css\styles.css">-->
+  
+  <!-- Load CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <!-- MathJax Configuration  -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    .math-equation {
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-  <img src="../static/Logo.png" width="50%" />
-  </div>  
-      <div style= "max-width: 85%; 
-      text-align: justify;">
-      <div style="margin-left:15%;">
-      <ul>
-        <h2 class="headingtop_margin">Algebra: Quadratic Equation Examples</h2>
-      <div class="example-boxAlgebra">
-      <h4>Example 1:  \(3x^2 + 6x - 9 = 0\)<h4>
-  <h4 class="heading_margin">Solution: </h4>
-  <p class= "math-equation">
-  Split the middle term
-  <br>\(⇒ 3x^2 + 9x - 3x - 9 \,\;\;\;\;= 0\) 
-  <br>\(⇒ 3x(x + 3) - 3(x + 3) = 0\)        
-  <br>\(⇒ (3x - 3)(x + 3) \;\;\;\;\;\;\;\;\,= 0\)
-  <br>when \(3x - 3 = 0  \;\;\;\;\, ⇒    x = 1\)
-  <br>when \(x + 3 = 0   \;\;\;\;\;\;\, ⇒    x = - 3\)
-  <br>The required solutions are:
-  <br>\(x = -3, 1\)
-  </p>
+<body>
+
+  <!-- Logo Header -->
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="../static/Logo.png" width="50%" alt="Logo" />
+  </div>
+  
+  <!-- Main Content -->
+  <div class="content-container">
+    
+    <h2 class="headingtop_margin">Algebra: Quadratic Equation Examples</h2>
+    
+    <!-- Example 1 -->
+    <div class="example-boxAlgebra">
+      <!-- Fixed unclosed h4 tag -->
+      <h4>Example 1: \(3x^2 + 6x - 9 = 0\)</h4>
+      <h4 class="heading_margin">Solution: </h4>
+      
+      <div class="math-equation">
+        $$
+        \begin{aligned}
+        \text{Split the middle term:} \\
+        3x^2 + 9x - 3x - 9 &= 0 \\
+        3x(x + 3) - 3(x + 3) &= 0 \\
+        (3x - 3)(x + 3) &= 0 \\
+        \text{When } 3x - 3 = 0 &\Rightarrow x = 1 \\
+        \text{When } x + 3 = 0 &\Rightarrow x = -3 \\
+        \text{The required solutions are: } x = -3, 1
+        \end{aligned}
+        $$
       </div>
-            <br>
+    </div>
+    
+    <br>
+
+    <!-- Example 2 -->
     <div class="example-boxAlgebra">
       <h4>Example 2: \(x^2 - 7x + 6 = 0\)</h4>
-  <h4 class="heading_margin">Solution: </h4>
-  <p class= "math-equation">  
-  Split the middle term
-  <br>\(⇒ x^2 - x - 6x + 8 \;\;\;\;\;\;= 0\)
-  <br>\(⇒ x(x - 1) - 6(x - 1) = 0\)       
-  <br>\(⇒ (x - 6)(x - 1) \,\;\;\;\;\;\;\;\;= 0\)
-  <br>when  \(x - 6 = 0    \,\;\;\;\;⇒    x = 6\)
-  <br>when  \(x - 1 = 0    \,\;\;\;\;⇒    x = 1\)
-  <br>The required solutions are:
-  <br>\(x = 1, 6\)
-  </p>
+      <h4 class="heading_margin">Solution: </h4>
+      
+      <div class="math-equation">
+        $$
+        \begin{aligned}
+        \text{Split the middle term:} \\
+        x^2 - x - 6x + 6 &= 0 \\
+        x(x - 1) - 6(x - 1) &= 0 \\
+        (x - 6)(x - 1) &= 0 \\
+        \text{When } x - 6 = 0 &\Rightarrow x = 6 \\
+        \text{When } x - 1 = 0 &\Rightarrow x = 1 \\
+        \text{The required solutions are: } x = 1, 6
+        \end{aligned}
+        $$
+      </div>
     </div>
+    
     <br>
+
+    <!-- Example 3 -->
     <div class="example-boxAlgebra">
       <h4>Example 3: \(2x^2 + 3x - 5 = 0\)</h4>
-  <h4 class="heading_margin">Solution: </h4>
-  <p class= "math-equation">
-  Split the middle term
-  <br>\(⇒ 2x^2 - 2x + 5x - 5 \;\;\;\;= 0\)
-  <br>\(⇒ 2x(x - 1) + 5(x - 1) = 0\)        
-  <br>\(⇒ (2x + 5)(x - 1) \;\;\;\;\;\;\;\;\,= 0\)
-  <br>when \(2x + 5 = 0   \;⇒    x = - 5/2\)
-  <br>when \(x - 1 = 0    \;\;⇒    x = 1\)
-  <br>The required solutions are:
-  <br>\(x = -5/2, 1\)
-  </p>
+      <h4 class="heading_margin">Solution: </h4>
+      
+      <div class="math-equation">
+        $$
+        \begin{aligned}
+        \text{Split the middle term:} \\
+        2x^2 - 2x + 5x - 5 &= 0 \\
+        2x(x - 1) + 5(x - 1) &= 0 \\
+        (2x + 5)(x - 1) &= 0 \\
+        \text{When } 2x + 5 = 0 &\Rightarrow x = -\frac{5}{2} \\
+        \text{When } x - 1 = 0 &\Rightarrow x = 1 \\
+        \text{The required solutions are: } x = -\frac{5}{2}, 1
+        \end{aligned}
+        $$
+      </div>
+    </div>      
 
-     </div>      
-      </ul>
-        </div>
+    <!-- Exercise Link -->
+    <div style="text-align: right; font-size: 20px; padding-right: 10%; margin-top: 20px;">      
+      <a href="quadratic_exercise.html">Exercise</a>
+    </div>
 
-        <div style = "text-align: right; font-size: 20px; padding-right: 10%;">      
-          <a href="quadratic_exercise.html">Exercise</a>
-          </div>
-   </div>
+  </div>
+
   <script src="../static/script.js"></script>
 </body>
 </html>

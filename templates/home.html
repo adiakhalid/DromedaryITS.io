@@ -2,50 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  
+  <!-- Load CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <!-- MathJax Configuration  -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    .line-spacing {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Logo Header -->
   <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;">
     <img src="../static/Logo.png" width="50%" alt="Logo" />
   </div>
 
-  <div style="max-width: 85%; text-align: justify;">
-    <div style="margin-left: 15%;">
+  <!-- Main Content -->
+  <div class="content-container">
 
-      <h3>Mathematics</h3>
+    <h2>Mathematics</h2>
 
-      <h4>Arithmetic</h4>
-      <p class="line-spacing">
-        Arithmetic operations are a set of four basic operations: addition, subtraction, multiplication and division to perform on two or more quantities. It includes the study of numbers and order of operations (perform multiplication and division first, working from left to right, before doing addition and subtraction) which are important in all other parts of mathematical study such as algebra, derivatives, etc.
-      </p>
+    <h4>Arithmetic</h4>
+    <p class="line-spacing">
+      Arithmetic operations are a set of four basic operations: addition, subtraction, multiplication and division to perform on two or more quantities. It includes the study of numbers and order of operations (perform multiplication and division first, working from left to right, before doing addition and subtraction) which are important in all other parts of mathematical study such as algebra, derivatives, etc.
+    </p>
 
-      <h4>Algebra</h4>
-      <p class="line-spacing">
-        Algebra represents statements or problems in the form of mathematical expressions. These mathematical expressions involve variables (x, y, z), numbers and mathematical operations.
-      </p>
+    <h4>Algebra</h4>
+    <p class="line-spacing">
+      Algebra represents statements or problems in the form of mathematical expressions. These mathematical expressions involve variables (x, y, z), numbers and mathematical operations.
+    </p>
 
-      <h4>Derivatives</h4>
-      <p class="line-spacing">
-        A derivative is the rate of change of a quantity with respect to another quantity. Also known as the differential coefficient of a quantity with respect to another. The procedure of finding the derivative of a function is known as differentiation.
-      </p>
-      <br>
+    <h4>Derivatives</h4>
+    <p class="line-spacing">
+      A derivative is the rate of change of a quantity with respect to another quantity. Also known as the differential coefficient of a quantity with respect to another. The procedure of finding the derivative of a function is known as differentiation.
+    </p>
+    
+    <br>
 
+    <!-- Navigation Link -->
+    <div style="margin-bottom: 20px;">
       <a href="arithmetic.html">Next Chapter: Arithmetic Operations</a>
-
-      <h5>Reference</h5>
-      <ul>
-        <li><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
-      </ul>
-
     </div>
+
+    <h5>Reference</h5>
+    <ul>
+      <li><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
+    </ul>
+
   </div>
 
   <script src="../static/script.js"></script>

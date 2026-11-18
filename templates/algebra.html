@@ -2,79 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebra</title>
+  
+  <!-- Load CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+  <!-- MathJax Configuration  -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
   </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-   <title>Algebra</title>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    /* Center the content nicely */
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+
+    .main-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    /* Style the exercise link */
+    .exercise-link {
+      text-align: right;
+      font-size: 18px;
+      padding-right: 10%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .math-equation {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-  <img src="../static/Logo.png" width="50%" />
+<body>
+
+  <!-- Logo Header -->
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="../static/Logo.png" width="50%" alt="Logo" />
   </div>
   
-      <div style= "max-width: 85%; 
-      text-align: justify;">
-      <div style="margin-left:15%;">
-         <h3>Mathematics</h3>
-         <ul>
-          <h3>Algebra</h3>
-          <p class= "math-equation">Algebra deals with variables (do not have fixed values) and arithmetic operations. In algebraic expressions, these values are usually represented using symbols like \(x, y, z\), etc. 
-                These symbols are manipulated using various arithmetic operations (such as addition, subtraction, multiplication, and division) with the goal to find their values. 
-                An algebraic equation can be represented by \(2x + 3 = 16\).
-            In this expression, 3 and 16 are constants that remain fixed; additionally, 3 is a coefficient, whereas '\(x\)' is the variable. </p>
-          <h4>Algebraic expression</h4>
-          <p class= "math-equation">
-                An algebraic expression or polynomial is an expression made up of variables, constants, arithmetic expressions and positive integers exponents of variables.
-                Two algebraic expressions joined by an 'equal to (=)' symbol form an equation, which is a mathematical statement.
-                The different types of equations, based on the degree of the variables are given below:
-            </p> 
-            <li><h4>Linear Equations</h4>
-              <p class= "math-equation">
-                Linear equations are equations with degree one. Their standard form is \(ax + b = 0\), where a and b are constants and \(x\) is a variable. 
-                <br>In the example given below, we will solve a linear algebraic expression with basic steps:
-                <br>Example: \(5x - 15 = 2x - 6\)
-                <br>  
-                Step1: Transfer \(2x\) to left-hand-side (L.H.S) of equation and change the sign from positive to negative. Also transfer -15 to right-hand-side (R.H.S) and change negative sign to positive. 
-                 <br>\(\implies 5x - 2x = -6 + 15\)
-                <br>Step 2: Solve basic arithmetic expressions.
-                <br>\(\implies 3x = 9\)
-                <br>Divide both sides by a common divisor such as 3
-                <br>\(\implies 3x / 3 = 9 / 3\)
-                <br>\(\implies x = 3\)
-                </p>
-                </li>
-                      <li><h4>Quadratic Equations</h4>
-              <p class="math-equation">
-                A quadratic equation is an equation of degree two and can be written in the standard form as \(ax^2 + bx + c = 0\), where x is the variable, the term \(ax^2\) has degree 2, the term \(bx\) has degree 1, \(c\) is the constant term (degree 0), and \(a, b, c\) are constants. 
-                <br>Example: \(4x^2 - 15x + 9 = 0\)
-                <br>Step 1: Split the middle term '\(-15x\)' into two terms whose sum equals \(b\) and whose product equals \(a \cdot c\) (here, \(a \cdot c = 4 \cdot 9 = 36\)).
-                <br>\(\implies 4x^2 - 12x - 3x + 9=0 \)
-                <br>\(\implies  4x (x - 3) - 3 (x - 3)=0\)
-                <br>\(\implies   (4x - 3)(x - 3) = 0\)
-                <br>Step 2: Therefore, one of \((4x - 3)\) and \((x - 3)\) must be zero,
-                <br>when, \(4x - 3 = 0 \implies  x = 3 / 4 \)
-                <br>and when \(x - 3 = 0 \implies x = 3 \)
-                <br>Thus required solutions are \(x = 3 / 4, 3\).
-                </p>
-                </li>
-          <br>
-          <div style = "text-align: right; font-size: 18px; padding-right: 10%;">      
-            <a href="linear_exercise.html">Exercise</a>
-            </div>
-          <h5>Reference</h5>
-            <ul>
-                <li style="margin-top: -2%;"><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
-           <li style="margin-top: 1.5%;"><a href="https://www.math-only-math.com/">Math-Only-Math</a></li>
-           <!--<li style="margin-top: -2%;"><a href="https://www.geeksforgeeks.org/solving-cubic-equations/"> GeeksforGeeks</a></li>
-           -->
-        </ul>
-        </div>
+  <!-- Main Content Container -->
+  <div class="content-container">
+    
+    <h3>Mathematics</h3>
+    
+   
+    <div class="main-list">
+      
+      <h3>Algebra</h3>
+      <p class="math-equation">
+        Algebra deals with variables (do not have fixed values) and arithmetic operations. In algebraic expressions, these values are usually represented using symbols like \(x, y, z\), etc. 
+        These symbols are manipulated using various arithmetic operations (such as addition, subtraction, multiplication, and division) with the goal to find their values. 
+        An algebraic equation can be represented by \(2x + 3 = 16\).
+        In this expression, 3 and 16 are constants that remain fixed; additionally, 3 is a coefficient, whereas '\(x\)' is the variable.
+      </p>
+      
+      <h4>Algebraic expression</h4>
+      <p class="math-equation">
+        An algebraic expression or polynomial is an expression made up of variables, constants, arithmetic expressions and positive integers exponents of variables.
+        Two algebraic expressions joined by an 'equal to (=)' symbol form an equation, which is a mathematical statement.
+        The different types of equations, based on the degree of the variables are given below:
+      </p> 
+
+      <ul>
+
+        <li>
+          <h4>Linear Equations</h4>
+          <p class="math-equation">
+            Linear equations are equations with degree one. Their standard form is \(ax + b = 0\), where a and b are constants and \(x\) is a variable. 
+            <br>In the example given below, we will solve a linear algebraic expression with basic steps:
+            <br>Example: \(5x - 15 = 2x - 6\)
+            <br>  
+            Step1: Transfer \(2x\) to left-hand-side (L.H.S) of equation and change the sign from positive to negative. Also transfer -15 to right-hand-side (R.H.S) and change negative sign to positive. 
+            <br>\(\implies 5x - 2x = -6 + 15\)
+            <br>Step 2: Solve basic arithmetic expressions.
+            <br>\(\implies 3x = 9\)
+            <br>Divide both sides by a common divisor such as 3
+            <br>\(\implies 3x / 3 = 9 / 3\)
+            <br>\(\implies x = 3\)
+          </p>
+        </li>
+
+        <li>
+          <h4>Quadratic Equations</h4>
+          <p class="math-equation">
+            A quadratic equation is an equation of degree two and can be written in the standard form as \(ax^2 + bx + c = 0\), where x is the variable, the term \(ax^2\) has degree 2, the term \(bx\) has degree 1, \(c\) is the constant term (degree 0), and \(a, b, c\) are constants. 
+            <br>Example: \(4x^2 - 15x + 9 = 0\)
+            <br>Step 1: Split the middle term '\(-15x\)' into two terms whose sum equals \(b\) and whose product equals \(a \cdot c\) (here, \(a \cdot c = 4 \cdot 9 = 36\)).
+            <br>\(\implies 4x^2 - 12x - 3x + 9=0 \)
+            <br>\(\implies  4x (x - 3) - 3 (x - 3)=0\)
+            <br>\(\implies   (4x - 3)(x - 3) = 0\)
+            <br>Step 2: Therefore, one of \((4x - 3)\) and \((x - 3)\) must be zero,
+            <br>when, \(4x - 3 = 0 \implies  x = 3 / 4 \)
+            <br>and when \(x - 3 = 0 \implies x = 3 \)
+            <br>Thus required solutions are \(x = 3 / 4, 3\).
+          </p>
+        </li>
       </ul>
+
+      <br>
+      <div class="exercise-link">      
+        <a href="linear_exercise.html">Exercise</a>
+      </div>
+      
+      <h5>Reference</h5>
+      <ul>
+        <li style="margin-top: -2%;"><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
+        <li style="margin-top: 1.5%;"><a href="https://www.math-only-math.com/">Math-Only-Math</a></li>
+      </ul>
+
+    </div>
   </div>
-</div>
-<script src="../static/script.js"></script>
+
+  <script src="../static/script.js"></script>
 </body>
 </html>

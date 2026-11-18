@@ -2,66 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subtraction Example</title>
-<!-- <link rel="stylesheet" href="C:\Users\Adia_\Desktop\Exercises_Examples\Exercises_Examples\css\styles.css">-->
+  
+  <!-- Load CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <!-- MathJax Configuration  -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+   
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    /* Fix the white background stretching in the pre tags */
+    pre {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      padding: 0;
+      margin: 10px 0 0 20px; 
+      display: inline-block;
+      width: auto; 
+      background-color: transparent;
+      border: none;
+    }
+
+    .example-box {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-  <img src="../static/Logo.png" width="50%" />
+<body>
+
+  <!-- Logo Header -->
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="../static/Logo.png" width="50%" alt="Logo" />
   </div>  
-      <div style= "max-width: 85%; 
-      text-align: justify;">
-      <div style="margin-left:15%;">
-      <ul>
-        <h2 class="headingtop_margin">Arithmetic: Subtraction Examples</h2>
-      <div class="example-box">
-      <h4>Example 1: <h4>
-        <h4>Solution: </h4>
-             <pre>
-                15
-              -  3
-               -----
-                12
-              <pre>
-            </div>
-            <br>
+
+  <!-- Main Content -->
+  <div class="content-container">
+    
+  
+    <h2 class="headingtop_margin">Arithmetic: Subtraction Examples</h2>
+    
+    <!-- Example 1 -->
     <div class="example-box">
-      <h4>Example 2: </h4>
-        <h4>Solution: </h4>
-        <pre>
-             76
-           - 24
-           -----
-             52
-        </pre>
+      <h4>Example 1: \(15 - 3\)</h4>
+      <h4 class="heading_margin">Solution: </h4>
+      <pre>
+      15
+    -  3
+    -----
+      12</pre>
     </div>
+    
     <br>
+
+    <!-- Example 2 -->
     <div class="example-box">
-      <h4>Example 3: </h4>
-        <h4>Solution: </h4>
-          <pre>
-   borrow → 1 from  the tens digit 8 (3 → units becomes 13 and 8 → tens becomes 7)
-            (Units: 13 -5 and Tens: 7 - 4)
-            83
-          - 45
-          -----
-            38
-          </pre>  
 
-     </div>      
-      </ul>
-        </div>
+      <h4>Example 2: \(76 - 24\)</h4>
+      <h4 class="heading_margin">Solution: </h4>
+      <pre>
+      76
+    - 24
+    -----
+      52</pre>
+    </div>
+    
+    <br>
 
-        <div style = "text-align: right; font-size: 20px; padding-right: 10%;">      
-          <a href="subtraction_exercise.html">Exercise</a>
-          </div>
-   </div>
+    <!-- Example 3 -->
+    <div class="example-box">
+  
+      <h4>Example 3: \(83 - 45\)</h4>
+      <h4 class="heading_margin">Solution: </h4>
+      <pre>
+borrow → 1 from the tens digit 8 
+(3 → units becomes 13 and 8 → tens becomes 7)
+(Units: 13 - 5 and Tens: 7 - 4)
+
+      83
+    - 45
+    -----
+      38</pre>  
+    </div>      
+
+    <!-- Exercise Link -->
+    <div style="text-align: right; font-size: 20px; padding-right: 10%; margin-top: 20px;">      
+      <a href="subtraction_exercise.html">Exercise</a>
+    </div>
+
+  </div>
+
   <script src="../static/script.js"></script>
 </body>
 </html>

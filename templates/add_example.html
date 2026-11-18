@@ -2,64 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addition Example</title>
+  
   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+  <!-- MathJax Configuration (Version 3) -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
   </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-<title>Addition Example</title>
-<!-- <link rel="stylesheet" href="C:\Users\Adia_\Desktop\Exercises_Examples\Exercises_Examples\css\styles.css">-->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    .content-container {
+      max-width: 800px; 
+      margin: 0 auto;   
+      padding: 20px;
+      text-align: left;
+    }
+    
+    .example-box {
+      margin-bottom: 20px;
+    }
+
+
+    pre {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px; /* Keep it readable */
+      padding: 0;
+      margin: 10px 0 0 20px; /* Added left margin to indent it slightly */
+      display: inline-block;
+      width: auto; /* Shrinks to fit the text */
+      background-color: transparent; /* Removes the white box! */
+      border: none;
+    }
+    
+    .exercise-link {
+      text-align: right;
+      font-size: 20px;
+      padding-right: 10%;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-<img src="../static/Logo.png" width="50%" />
-</div>
-      <div style= "max-width: 85%; 
-      text-align: justify;">
-      <div style="margin-left:15%;">
-      <h2 class="headingtop_margin">Arithmetic: Addition Examples</h2>
-      <div class="example-box">
+
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="../static/Logo.png" width="50%" alt="Logo" />
+  </div>
+
+  <div class="content-container">
+    <h2 class="headingtop_margin">Arithmetic: Addition Examples</h2>
+    
+    <div class="example-box">
       <h4>Example 1: \(22 + 44\)</h4>
-        <h4 class="heading_margin">Solution: </h4>
-        <pre>
-            22
-          + 44
-          -----
-            66
-     </pre>
-      </div>
-            <br>
+      <h4 class="heading_margin">Solution: </h4>
+   
+      <pre>
+    22
+  + 44
+  -----
+    66</pre>
+    </div>
+
     <div class="example-box">
       <h4>Example 2: \(40 + 14\)</h4>
-        <h4 class="heading_margin">Solution: </h4>
-        <pre>
-             40
-           + 14
-           -----
-             54
-        </pre>
+      <h4 class="heading_margin">Solution: </h4>
+      <pre>
+    40
+  + 14
+  -----
+    54</pre>
     </div>
-    <br>
+
     <div class="example-box">
       <h4>Example 3: \(96 + 35\)</h4>
-        <h4 class="heading_margin">Solution: </h4>
-          <pre>
-     carry  1 ← 6+5 = 11 
-            96 
-          + 35
-          -----
-           131
-          </pre>  
-          
-        </div>
-        </div>
-       
-              <div style = "text-align: right; font-size: 20px; padding-right: 10%;">      
-              <a href="addition_exercise.html">Exercise</a>
-              </div>
-   </div>
+      <h4 class="heading_margin">Solution: </h4>
+      <pre>
+carry  1 ← 6+5 = 11 
+    96 
+  + 35
+  -----
+   131</pre>  
+    </div>
+
+    <div class="exercise-link">      
+      <a href="addition_exercise.html">Exercise</a>
+    </div>
+  </div>
+
   <script src="../static/script.js"></script>
 </body>
 </html>

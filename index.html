@@ -2,59 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
-  <!--
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
-  <script type="text/javascript"
-    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
--->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/contrib/auto-render.min.js"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-<!-- <link rel="stylesheet" href="C:\Users\Adia_\Desktop\Exercises_Examples\Exercises_Examples\css\styles.css">-->
+  
+  <!-- Load CSS -->
+  <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+
+  <!-- KaTeX CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/contrib/auto-render.min.js"></script>
+
+  <style>
+    /* Center the content and limit the width for readability */
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+    
+    .line-spacing {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <!-- Script to trigger KaTeX rendering -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });
+    });
+  </script>
 </head>
-<div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
-  <img src="./static/Logo.png" width="50%" />
+<body>
+
+  <!-- Logo Header -->
+  <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;"> 
+    <img src="./static/Logo.png" width="50%" alt="Logo" />
   </div>
   
-    <div style= "max-width: 85%; 
-                 text-align: justify;">
-      <div style="margin-left:15%;">
-         <h3>Mathematics</h3>
-         <ul>
-          <h4>Arithmetic</h4>
-          <p class="line-spacing">Arithmetic operations are a set of four basic operations: addition, subtraction, multiplication and division to perform on two or 
-            more quantities. It includes the study of numbers and order of operations (perform multiplication and division first, working from left to right, before doing addition and subtraction) which are important in all other parts of mathematical study such as algebra, derivatives etc.
-          </p>
-          <h4>Algebra</h4>
-          <p class="line-spacing">
-              Algebra represents statements or problems in the form of mathematical expressions. These mathematical expressions involve variables (x, y, z), numbers and mathematical operations.
-                </p>
-                
-          <h4>Derivatives</h4>
-          <p class="line-spacing">
-              A derivative is the rate of change of a quantity with respect to another quantity. Also known as differential coefficient of a quantity with respect to another. The procedure of finding the derivative of a function is known as differentiation.
-            </p><br>
-            <a href="./templates/arithmetic.html">Next Chapter Arithmetic Operations
-            </a>
-            <h5>Reference</h5>
-            <ul>
-              <br>
-           <li style="margin-top: -0.5%;"><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
-          </ul>
-            </div>
+  <!-- Main Content -->
+  <div class="content-container">
+    
+    <h3>Mathematics</h3>
+    
+    <!-- Removed invalid <ul> wrapper -->
+    <h4>Arithmetic</h4>
+    <p class="line-spacing">
+      Arithmetic operations are a set of four basic operations: addition, subtraction, multiplication and division to perform on two or more quantities. It includes the study of numbers and order of operations (perform multiplication and division first, working from left to right, before doing addition and subtraction) which are important in all other parts of mathematical study such as algebra, derivatives etc.
+    </p>
 
-            </ul>
+    <h4>Algebra</h4>
+    <p class="line-spacing">
+      Algebra represents statements or problems in the form of mathematical expressions. These mathematical expressions involve variables (\(x, y, z\)), numbers and mathematical operations.
+    </p>
+            
+    <h4>Derivatives</h4>
+    <p class="line-spacing">
+      A derivative is the rate of change of a quantity with respect to another quantity. Also known as differential coefficient of a quantity with respect to another. The procedure of finding the derivative of a function is known as differentiation.
+    </p>
 
-        </div>
-        
-   </div>
+    <br>
+
+    <!-- Navigation Link -->
+    <div style="margin-bottom: 20px;">
+      <a href="./templates/arithmetic.html">Next Chapter Arithmetic Operations</a>
+    </div>
+
+    <h5>Reference</h5>
+    <ul>
+      <li style="margin-top: -0.5%;"><a href="https://www.cuemath.com/numbers/arithmetic-operations/#">Mathematics: CUEMATH</a></li>
+    </ul>
+
+  </div>
+
   <script src="./static/script.js"></script>
 </body>
 </html>
-
