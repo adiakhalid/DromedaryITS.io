@@ -93,7 +93,7 @@ function checkAnswers(lastPage) {
 
   if (lastPage == true)
   {  
-  resultMessage.innerHTML += "<br>All exercises are sucessfully completed.";
+  resultMessage.innerHTML += "<br>All exercises are successfully completed.";
   nextButton.disabled = false;
   submitButton3.disabled = true;
   submitButton.disabled = true;}

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
-  <script type="text/javascript" src="path/to/mathjax-config.js"></script>
-<script type="text/javascript" src="path/to/MathJax.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   <title>Linear Algebra Exercise</title>
   <link href="../static/css/styles.css" rel="stylesheet">
  </head>
@@ -22,7 +22,7 @@
     </div>    
   <div class="centered">  
     <div style= "max-width: 100%; max-height: 20%;">
-      <h2 class="headingtop_margen">Exercises for Algebra</h2>
+      <h2 class="headingtop_margin">Exercises for Algebra</h2>
       </div>
       <div class="exercise-box">
       <div class="timer" id="timer" >
@@ -32,7 +32,7 @@
 
       <form id="exerciseForm">
         <div id = "Q1">
-            <p class="line-spcaing">Q1: \(x - 6 = 2x + 10\) </p>
+            <p class="line-spacing">Q1: \(x - 6 = 2x + 10\) </p>
           <input type="radio" id="lin1" name="q1" value=" 16">
           <label for="lin1">16</label><br>
           <input type="radio" id="lin2" name="q1" value=" 8">
@@ -48,7 +48,7 @@
         </div>
 
         <div id = "Q2" style="display: none;">
-          <p class="line-spcaing">Q2: \(7x - 20 = 4x + 4\) </p>
+          <p class="line-spacing">Q2: \(7x - 20 = 4x + 4\) </p>
           <input type="radio" id="lin4" name="q2" value="8">
           <label for="lin4">8</label><br>
           <input type="radio" id="lin5" name="q2" value="18">
@@ -71,9 +71,9 @@
           <input type="radio" id="lin9" name="q3" value="6/7">
           <label for="lin9">6/7</label><br>
           <p style="font-size: 14px;" id="resultMessage_q3"></p>
-        <button id = "submitButton3" onclick="checkAnswer('q3', '7/6')">Check & Submit</button>
+          <button id = "submitButton3" onclick="checkAnswer('q3', '7/6')">Check & Submit</button>
+          
         <button class="button gray" type="submit" id="submitButton" onclick="checkAnswers(false)">Result</button>
-        <br>
         <button class="button gray" type="button" id="exampleButton" disabled onclick="openPage('linear_example.html')">Example</button>
         <button class="button gray" type="button" id="nextButton" onclick="openPage('quadratic_exercise.html')" disabled>Next Exercise</button>
         

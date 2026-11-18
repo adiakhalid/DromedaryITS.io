@@ -6,9 +6,9 @@
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
-  <script type="text/javascript" src="path/to/mathjax-config.js"></script>
-<script type="text/javascript" src="path/to/MathJax.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   <meta charset="UTF-8">
   <title>Quadratic Algebra Exercise</title>
   </head>
@@ -19,7 +19,7 @@
     
   <div class="centered">  
     <div style= "max-width: 100%; max-height: 20%;">
-      <h2 class="headingtop_margen">Exercises for Algebra</h2>
+      <h2 class="headingtop_margin">Exercises for Algebra</h2>
       </div>
       <div class="exercise-box">
       <div class="timer" id="timer" >
@@ -68,11 +68,13 @@
           <input type="radio" id="qua9" name="q3" value="1/2">
           <label for="qua9">1/2</label><br>
           <p style="font-size: 14px;" id="resultMessage_q3"></p>
-          <button id="submitButton3" onclick="checkAnswer('q3', '1/2, 1')" class="button gray">Check & Submit</button>
-          <button type="submit" id="submitButton" onclick="checkAnswers(false)" class="button gray">Result</button>
-          <br>
-          <button type="button" id="exampleButton" disabled onclick="openPage('qua_example.html')" class="button gray">Example</button>
-          <button class="button gray" type="button" id="nextButton" onclick="openPage('derivatives.html')" disabled>Next Chapter</button>         
+          <button class="button gray" id = "submitButton3" onclick="checkAnswer('q3', '1/2, 1')">Check & Submit</button>
+          
+        
+        <button class="button gray" type="submit" id="submitButton" onclick="checkAnswers(false)">Result</button>
+        <button class="button gray" type="button" id="exampleButton" disabled onclick="openPage('qua_example.html')">Example</button>
+        <button class="button gray" type="button" id="nextButton" onclick="openPage('derivatives.html')" disabled>Next Chapter</button>
+        
       </div>
       </form>
        </div>

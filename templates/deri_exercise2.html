@@ -6,9 +6,9 @@
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
-  <script type="text/javascript" src="path/to/mathjax-config.js"></script>
-<script type="text/javascript" src="path/to/MathJax.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   <meta charset="UTF-8">
   <title>Derivative Exercise</title>
   </head>
@@ -19,7 +19,7 @@
     
   <div class="centered">  
     <div style= "max-width: 100%; max-height: 20%;">
-       <h2 class="headingtop_margen">Exercises for Derivative</h2>
+       <h2 class="headingtop_margin">Exercises for Derivative</h2>
       </div>
       <div class="exercise-box">
       <div class="timer" id="timer" >
@@ -37,7 +37,7 @@
           <input type="radio" id="der3" name="q1" value="2xsin(x) + xcos(x)">
           <label for="der3">\(2xsin(x) + xcos(x)\)</label><br>
           <p style="font-size: 14px;" id="resultMessage_q1"></p>
-          <button class="button gray" onclick="checkAnswer('q1', '2xsin(x) + x^2cos(x)')">Check & Submit</button>
+          <button type="button" class="button gray" onclick="checkAnswer('q1', '2xsin(x) + x^2cos(x)')">Check & Submit</button>
           <!--<button type="submit" id="submitButton11" onclick="checkAnswer()">Submit</button>-->
           
           <button class="button gray" type="button" id="submitButton1" onclick="showNextQuestionDiv('Q2', 'Q1')">Next Question</button>
@@ -46,14 +46,14 @@
 
         <div id="Q2" style="display: none;">
           <p class="line-spacing">Q2: \(y = e^xcos(x)\)</p>
-          <input type="radio" id="der" name="q2" value="e^xcos(x) + e^xsin(x)">
-          <label for="der1">\(e^xcos(x) + e^xsin(x)\)</label><br>
+          <input type="radio" id="der4" name="q2" value="e^xcos(x) + e^xsin(x)">
+          <label for="der4">\(e^xcos(x) + e^xsin(x)\)</label><br>
           <input type="radio" id="der5" name="q2" value="e^xcos(x)">
           <label for="der5">\(e^xcos(x) + e^x\)</label><br>
           <input type="radio" id="der6" name="q2" value="e^xcos(x) - e^xsin(x)">
           <label for="der6">\(e^xcos(x) - e^xsin(x)\)</label><br>
           <p style="font-size: 14px;" id="resultMessage_q2"></p>
-          <button class="button gray" onclick="checkAnswer('q2', 'e^xcos(x) - e^xsin(x)')">Check & Submit</button>
+          <button type="button" class="button gray" onclick="checkAnswer('q2', 'e^xcos(x) - e^xsin(x)')">Check & Submit</button>
           <!--<button type="submit" id="submitButton22" onclick="checkAnswer()">Submit</button>-->
           <button class="button gray" type="button" id="submitButton2" onclick="showNextQuestionDiv('Q3', 'Q2')">Next Question</button>
          
@@ -69,7 +69,7 @@
           <input type="radio" id="der9" name="q3" value="3xtan(x) + x^3sec^2(x)">
           <label for="der9">\(3xtan(x) + x^3sec^2(x)\)</label><br>
           <p style="font-size: 14px;" id="resultMessage_q3"></p>
-          <button id="submitButton3" onclick="checkAnswer('q3', '3x^2tan(x) + x^3sec^2(x)')" class="button gray">Check & Submit</button>
+          <button type="button" id="submitButton3" onclick="checkAnswer('q3', '3x^2tan(x) + x^3sec^2(x)')" class="button gray">Check & Submit</button>
           <button type="submit" id="submitButton" onclick="checkAnswers(true)" class="button gray">Result</button>
           <br>
           <button type="button" id="exampleButton" disabled onclick="openPage('deri_example2.html')" class="button gray">Example</button>

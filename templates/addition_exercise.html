@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
-  <script type="text/javascript" src="path/to/mathjax-config.js"></script>
-<script type="text/javascript" src="path/to/MathJax.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   <title>Addition Exercise</title>
   </head>
+  <body>
 <div style="position: fixed; top: 0; width: 100%;">
   <div style="text-align: center; margin-top: 2%; margin-bottom: 2%;" > 
     <img src="../static/Logo.png" width="50%" />
     </div>    
   <div class="centered">  
     <div style= "max-width: 100%; max-height: 20%;">
-      <h2 class="headingtop_margen">Exercises for Arithmetic</h2>
+      <h2 class="headingtop_margin">Exercises for Arithmetic</h2>
     </div>
     <div class="exercise-box">
       <div class="timer" id="timer" >
@@ -28,7 +28,7 @@
 
       <form id="exerciseForm">
         <div id = "Q1">
-          <p class="line-spcaing">Q1: 23 + 5 = </p>
+          <p class="line-spacing">Q1: 23 + 5 = </p>
           <input type="radio" id="add1" name="q1" value="73">
           <label for="add1">73</label><br>
           <input type="radio" id="add2" name="q1" value="38">
@@ -36,7 +36,7 @@
           <input type="radio" id="add3" name="q1" value="28">
           <label for="add3">28</label><br>
           <p style="font-size: 14px;" id="resultMessage_q1"></p>
-          <button onclick="checkAnswer('q1', '28')" class="button gray">Check & Submit</button>
+          <button type="button" onclick="checkAnswer('q1', '28')" class="button gray">Check & Submit</button>
           <button type="button" id="submitButton1" onclick="showNextQuestionDiv('Q2', 'Q1')" class="button gray">Next Question</button>
           
         </div>
@@ -44,7 +44,7 @@
           <!--<button type="submit" id="submitButton11" onclick="checkAnswer()">Submit</button>-->
 
         <div id = "Q2" style="display: none;" >
-          <p class="line-spcaing">Q2: 103 + 76 = </p>
+          <p class="line-spacing">Q2: 103 + 76 = </p>
           <input type="radio" id="add4" name="q2" value="179">
           <label for="add4">179</label><br>
           <input type="radio" id="add5" name="q2" value="180">
@@ -52,23 +52,23 @@
           <input type="radio" id="add6" name="q2" value="181">
           <label for="add6">181</label><br>
           <p style="font-size: 14px;" id="resultMessage_q2"></p>
-          <button onclick="checkAnswer('q2', '179')" class="button gray">Check & Submit</button>
+          <button type="button" onclick="checkAnswer('q2', '179')" class="button gray">Check & Submit</button>
           <!--<button type="submit" id="submitButton22" onclick="checkAnswer()">Submit</button>-->
           <button type="button" id="submitButton2" onclick="showNextQuestionDiv('Q3', 'Q2')" class="button gray">Next Question</button>
           
         </div>
 
         <div id = "Q3" style="display: none;">
-          <p class="line-spcaing">Q3: 359 + 167 = </p>
-          <input type="radio" id="add7" name="q3" value="525">
+          <p class="line-spacing">Q3: 359 + 167 = </p>
+          <input type="radio" id="add7" name="q3" value="496">
           <label for="add7">496</label><br>
           <input type="radio" id="add8" name="q3" value="526">
           <label for="add8">526</label><br>
-          <input type="radio" id="add9" name="q3" value="527">
+          <input type="radio" id="add9" name="q3" value="536">
           <label for="add9">536</label><br>
           <p style="font-size: 14px;" id="resultMessage_q3"></p>
         
-          <button id="submitButton3" onclick="checkAnswer('q3', '526')" class="button gray">Check & Submit</button>
+          <button type="button" id="submitButton3" onclick="checkAnswer('q3', '526')" class="button gray">Check & Submit</button>
           <button type="submit" id="submitButton" onclick="checkAnswers(false)" class="button gray">Result</button>
           <br>
           <button type="button" id="exampleButton" disabled onclick="openPage('add_example.html')" class="button gray">Example</button>
